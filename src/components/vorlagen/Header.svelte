@@ -1,6 +1,8 @@
 <script>
 	import Einstellungen from "./../modal/einstellungen.svelte";
     import Logo from "../Bilder/infoGrabber_Logo.svg";
+    import icon_logout from "../Bilder/icons/logout-16-white.svg"
+    import icon_einstellungen from "../Bilder/icons/adjust-filled-16-white.svg"
     let ProfilOffen = true
     let EinstellungenOffen = true
     function header_profil_anzeigen(){
@@ -42,8 +44,8 @@
         <span style="width: 280px; margin-top: 3%; "id="header_profil" class="tooltip_popup box1" on:mouseout={header_profil_verstecken} on:mouseover={header_profil_anzeigen}>
             <groupui-headline heading="h3" class="schriftfarbe">username</groupui-headline>
            
-            <div on:click={einstellungen_öffnen}><img src="../Bilder/icons/adjust-filled-16-white.svg" class="icon_element"><div class="text_mittig"><groupui-headline heading="h4" class="hydrated">Einstellungen</groupui-headline></div></div><br>
-            <div on:click={logout}><img src="./../Bilder/icons/logout-16-white.svg" class="icon_element"><div class="text_mittig"><groupui-headline heading="h4" class="hydrated">Logout</groupui-headline></div></div>
+            <div on:click={einstellungen_öffnen}><img alt="bild" src={icon_einstellungen} class="icon_element"><div class="text_mittig"><groupui-headline heading="h4" class="hydrated">Einstellungen</groupui-headline></div></div><br>
+            <div on:click={logout}><img alt="bild" src= {icon_logout} class="icon_element"><div class="text_mittig"><groupui-headline heading="h4" class="hydrated">Logout</groupui-headline></div></div>
         </span>
         {/if}
 
