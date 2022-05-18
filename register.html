@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script type="module" src="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/group-ui.esm.js"></script>
+        <script nomodule src="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/group-ui.js"></script>
+
+        <link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/man/man.css" />
+        <link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/vwag/vwag.css" />
+        <link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/audi/audi.css" />
+        <link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/porschePlant/porschePlant.css" />
+        
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <groupui-header class="hydrated">
+            <groupui-headline style="margin-right: 5%;"heading="h5" class="hydrated"><img src="Bilder/infoGrabber_Logo.svg" style="height: 80%;"></groupui-headline>
+
+        <div class="tooltip_rahmen" style="flex: 1">
+            <groupui-headline heading="h5" class="hydrated" onmouseout="objektverstecken('header_projekte')" onmouseover="objektanzeigen('header_projekte')">Projekte</groupui-headline>
+            <span onmouseover="objektanzeigen('header_projekte')" onmouseout="objektverstecken('header_projekte')" id="header_projekte" class="tooltip_popup box1">
+                <groupui-headline>Projekte:</groupui-headline>
+                <groupui-search-field placeholder="Projektname eingeben" disabled="false" severity="none">
+                    <!-- <span slot="label">Label</span>
+                    <span slot="description">Description</span> <-->
+                    <groupui-search-suggestion>Suggestion 1</groupui-search-suggestion>
+                    <groupui-search-suggestion>Suggestion 2</groupui-search-suggestion>
+                    <groupui-search-suggestion>Suggestion 3</groupui-search-suggestion>
+                </groupui-search-field>
+            </span>
+        </div>
+        <groupui-headline heading="h5" class="hydrated">FAQ</groupui-headline>
+        <groupui-headline heading="h5" class="hydrated">Sonstiges</groupui-headline>
+
+        <div style="width: 20%;" class="tooltip_rahmen" style="flex: 1;">
+            <groupui-avatar class="tooltip_rahmen" theme="vwag" style="float: right; position:sticky;"onclick="objektanzeigen('header_profil');"></groupui-avatar>
+            
+            <span style="width: 76%; margin-top: 6%;"id="header_profil" class="tooltip_popup box2" onmouseout="objektverstecken('header_profil')" onmouseover="objektanzeigen('header_profil')">
+                <groupui-headline>Projekte:</groupui-headline>
+                <div><img src="Bilder/icons/adjust-filled-16.svg" class="icon_element"><div class="text_mittig"><groupui-headline heading="h5" class="hydrated">Einstellungen</groupui-headline></div></div><br>
+                <div><img src="Bilder/icons/logout-16.svg" class="icon_element"><div class="text_mittig"><groupui-headline heading="h5" class="hydrated">Logout</groupui-headline></div></div>
+            </span>
+        </div>
+    </groupui-header>
+    <style>
+        groupui-headline {
+            flex: 1;
+            color: var(--groupui-vwag-color-white);
+        }
+        groupui-icon {
+            margin-left: var(--groupui-spacing-7);
+        }
+    </style>
+
+
+
+    <div class="objektmittig_außen">
+        <groupui-card class="login_feld objektmittig_innen">
+            <groupui-input placeholder="username" maxlength="16" pattern="[A-Za-z]{3}">
+                <span slot="label">Username</span>
+            </groupui-input>
+            
+            <groupui-input placeholder="123456" maxlength="16" pattern="[A-Za-z]{3}">
+                <span slot="label">Passwort</span>
+            </groupui-input>
+            <groupui-button>Registrieren</groupui-button>
+        </groupui-card>
+    </div>
+    </body>
+</html>

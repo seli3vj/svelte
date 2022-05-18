@@ -1,6 +1,6 @@
 <script>
     import {scale} from 'svelte/transition';
-export let name;
+    export let name;
 
 </script>
 
