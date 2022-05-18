@@ -10,7 +10,7 @@
         <groupui-headline style="margin-right: 5%;"heading="h5" class="hydrated"><img src="Bilder/infoGrabber_Logo.svg" style="height: 80%;"></groupui-headline>
 
         <div class="tooltip_rahmen" style="flex: 1">
-            <groupui-headline heading="h5" class="hydrated" onmouseout="objektverstecken('header_projekte')" onmouseover="objektanzeigen('header_projekte')">Projekte</groupui-headline>
+            <groupui-headline heading="h5" class="hydrated" onmouseout="objektverstecken('header_projekte')" onmouseover="objektanzeigen('header_projekte')">Projektetest</groupui-headline>
             <span onmouseover="objektanzeigen('header_projekte')" onmouseout="objektverstecken('header_projekte')" id="header_projekte" class="tooltip_popup box1">
                 <groupui-headline>Projekte:</groupui-headline>
                 <groupui-search-field placeholder="Projektname eingeben" disabled="false" severity="none">
