@@ -1,107 +1,195 @@
-@import '@fontsource/fira-mono';
+/* Projekte app.css, my-app-master*/
 
-:root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+.projekte_menülinks{
+    height: 81vh;
+    width: 20%;
+    background-color: #215f7e;
+    overflow-x: scroll;
+    color: #4C5356;
+    float: left;
+    background-color: #215f7e;
+    -webkit-box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
 }
 
-body {
-	min-height: 100vh;
-	margin: 0;
-	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
+.projekt_selected{
+    display: none;
+    width:71%;
+    height: 81vh;
+    background-color: #f0f1f2;
+    color: #4C5356;
+    float: left;
+    padding: 40px;
+    -webkit-box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+
+}
+.suchfeld{
+    position: relative;
+    line-height: 1.5;
+    letter-spacing: 0.0125rem;
+    font-family: "GroupUI", sans-serif;
+    height: 2.5rem;
+    font-size: 1rem;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 0.0625rem solid rgb(168, 173, 179);
+    border-radius: 0.125rem;
+    outline: currentcolor none medium;
+    color: rgb(76, 83, 86);
+    display: block;
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    padding: 0.4375rem 2.4375rem;
 }
 
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
+.schriftfarbe_dunkel{
+    color: #4C5356
 }
 
-#svelte {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+#modal{
+    padding-left: 5px;
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
-	color: var(--heading-color);
+
+.header_item{
+    float:left;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
 }
 
-p {
-	line-height: 1.5;
+/* Tooltip */
+.tooltip_rahmen{
+    float:right;  
 }
 
-a {
-	color: var(--accent-color);
-	text-decoration: none;
+.tooltip_popup{
+    padding: 5%; 
+    position: absolute; 
+    z-index: 0;
+    display:none;
 }
 
-a:hover {
-	text-decoration: underline;
+
+
+/* Div Arten */
+.box1{
+    background-color: #20607E;
+    color: #FFF;
 }
 
-h1 {
-	font-size: 2rem;
-	text-align: center;
+.box2{
+    background-color: #DFE2E6;
 }
 
-h2 {
-	font-size: 1rem;
+.box3{
+    background-color: #00354D;
+    color: #FFFFFF;
 }
 
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--text-color);
+.objektmittig_außen{
+    width:100%;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
+/* Icon */
+.icon_element{
+    height: 30px;
+    width: 15%; 
+    float: left;
 }
 
-button:focus:not(:focus-visible) {
-	outline: none;
+.icon_schrift{
+    font-size: 13px;
 }
 
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
+/**/
+
+groupui-headline{
+    color:#FFF
+}
+
+groupui-header{
+    position: fixed;
+    top: 0%;
+    z-index: 50;
+}
+p{
+  font-family: "GroupUI", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.footer{
+    position: fixed;
+    bottom:0%;
+    width: 100vw;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+    font-family: "GroupUI", sans-serif;
+    font-size: 1rem;
+}
+
+.link{
+    text-decoration: none;
+    color: white
+}
+
+
+
+
+/* Einstellungen */
+
+
+.einstellungen-side-bar{
+    height: 500px;
+    color: #4C5356;
+    float: left;
+    width: 30%;
+    background-color: #215f7e;
+    -webkit-box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+}
+.einstellungen-side-bar-elements{
+    background-color: #215f7e;
+    color: white;
+    padding: 15px;
+}
+.einstellungen-side-bar-elements:hover{
+    background-color: #004666;
+}
+.einstellungen-selected{
+    display: none;
+    width:65%;
+    height: 500px;
+    background-color: #f0f1f2;
+    color: #4C5356;
+    float: left;
+    padding: 0 10px 0 10px;
+    -webkit-box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0.25rem 0.5rem 0.063rem rgba(0, 0, 0, 0.24);
+}
+.sidebar_selected{
+    background-color: #00354d;
+}
+
+.closedialog{
+    margin-left:560px;
+    display: table;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    position: fixed;
+    float:right;
+    text-align: center;
 }

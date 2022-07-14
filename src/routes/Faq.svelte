@@ -1,10 +1,20 @@
 <script>
+
 	import {onMount} from "svelte";
-	import Header from "src/components/vorlagen/Header.svelte";
-	import Footer from "src/components/vorlagen/Footer.svelte";
-	import Groupui from "src/components/vorlagen/Groupui.svelte";
+	import Header from "../components/vorlagen/Header.svelte";
+	import Footer from "../components/vorlagen/Footer.svelte";
+	import Groupui from "../components/vorlagen/Groupui.svelte";
 	
 </script>
+
+
+<link rel='stylesheet' href='/build/bundle.css'>
+	
+<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/man/man.css" />
+<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/vwag/vwag.css" />
+<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/audi/audi.css" />
+<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/porschePlant/porschePlant.css" />
+
 
 <main>
     <Groupui/>
@@ -35,3 +45,4 @@
 
 	<Footer/>  
 </main>
+

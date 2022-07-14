@@ -30,7 +30,7 @@
     //}
 </script>
 <div style="height:64px"></div>
-<groupui-header class="hydrated">
+<groupui-header class="hydrated"> 
 
     <!-- svelte-ignore a11y-missing-attribute -->
     <groupui-headline style="margin-right: 5%;"heading="h5" class="hydrated"><a class="link" href="./"><img src="Bilder/infoGrabber_Logo.svg" style="width: 250px;"></a></groupui-headline>
