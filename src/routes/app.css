@@ -69,7 +69,7 @@
     padding: 5%; 
     position: absolute; 
     z-index: 0;
-    display:none;
+    display:block;
 }
 
 

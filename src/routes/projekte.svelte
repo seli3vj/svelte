@@ -1,13 +1,10 @@
 <script>
 	import {onMount} from "svelte";
-	import Header from "src/components/vorlagen/Header.svelte";
-	import Footer from "src/components/vorlagen/Footer.svelte";
-	import Groupui from "src/components/vorlagen/Groupui.svelte";
+	import Header from "../components/vorlagen/Header.svelte";
+	import Footer from "../components/vorlagen/Footer.svelte";
+	import Groupui from "../components/vorlagen/Groupui.svelte";
+	import "./app.css";
 	
-	window.onload = function exampleFunction() {
-        /*inhalt=document.getElementById("projektefilter").innerHTML
-		alert(inhalt)*/
-	}
 	let projekte = [
 		{"projekt_name":"carPLAN", "detail":"Detailierter Text", "projektid":123}, {"projekt_name":"aMaxa", "detail":"detailmaxa"}, {"projekt_name":"aEva", "detail":"detaileva"}, {"projekt_name":"aMax", "detail":"detailamax"}
 	]

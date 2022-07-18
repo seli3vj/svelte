@@ -1,24 +1,22 @@
-<script>
+<script lang="ts">
 
 	import {onMount} from "svelte";
+
 	import Header from "../components/vorlagen/Header.svelte";
 	import Footer from "../components/vorlagen/Footer.svelte";
 	import Groupui from "../components/vorlagen/Groupui.svelte";
-	
+	import "./app.css";
+
+	function a(){
+		console.log("a")
+	}
+
 </script>
-
-
-<link rel='stylesheet' href='/build/bundle.css'>
-	
-<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/man/man.css" />
-<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/vwag/vwag.css" />
-<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/audi/audi.css" />
-<link rel="stylesheet" href="https://groupui-assets.apps.emea.vwapps.io/components/latest/group-ui/assets/themes/porschePlant/porschePlant.css" />
-
 
 <main>
     <Groupui/>
 	<Header/>
+	<button on:click={a}>button</button>
 
     <h3>FAQ</h3>
 	
