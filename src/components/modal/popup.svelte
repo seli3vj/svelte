@@ -3,6 +3,7 @@
     import { fly, fade } from 'svelte/transition';
 
     const dispatch = createEventDispatcher();
+    //test
     var custom = false
     export let isvisble = false, opentext = "", type: PopupType = PopupType.Custom, headline = opentext, callback = ()=>(console.log("no callback"))
     let text = ""
